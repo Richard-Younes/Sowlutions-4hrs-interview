@@ -1,0 +1,9 @@
+/** @format */
+
+.itemsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-around;
+	row-gap: 2rem;
+}

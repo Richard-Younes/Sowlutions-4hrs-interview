@@ -1,0 +1,38 @@
+/** @format */
+
+.modalBackground {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal {
+	background: white;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+	position: relative;
+
+	width: 50%;
+	height: 80%;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.priceContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.image {
+	width: 30rem;
+}

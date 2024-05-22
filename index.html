@@ -1,0 +1,76 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <script type="module" src="./problem1.js"></script> -->
+		<!-- <script type="module" src="./problem3.js"></script> -->
+		<script type="module" src="./problem4.js"></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- Problem 2 -->
+
+		<!-- <input type="file" id="csvFile" accept=".csv" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+		<script>
+			// Store all combinations in the combinations variable, and the true combinations in the trueCombinations variable
+			let combinations = {};
+			let trueCombinations = {};
+
+			// Read the values in the CSV and edit the variables combinations and trueCombinations
+			document
+				.getElementById('csvFile')
+				.addEventListener('change', function (evt) {
+					let file = evt.target.files[0];
+					let reader = new FileReader();
+					reader.onload = function (e) {
+						let contents = e.target.result;
+						let data = Papa.parse(contents, { header: true }).data;
+
+						data.forEach(function (row) {
+							let combination =
+								row['Card Suit'] + row['Animal Name'] + row['Fruit'];
+							if (combination in combinations) {
+								combinations[combination]++;
+							} else {
+								combinations[combination] = 1;
+							}
+
+							if (row['Result'] === 'TRUE') {
+								if (combination in trueCombinations) {
+									trueCombinations[combination]++;
+								} else {
+									trueCombinations[combination] = 1;
+								}
+							}
+						});
+
+						// Check the probability
+						probabilityToBeatBoss('Hearts', 'Lion', 'Apple');
+					};
+
+					reader.readAsText(file);
+				});
+
+			// this is the function that will just divide the combinations to get the percentage
+			function probabilityToBeatBoss(cardSuit, animalName, fruit) {
+				let combination = cardSuit + animalName + fruit;
+				if (combination in combinations) {
+					return console.log(
+						`${
+							((trueCombinations[combination] || 0) /
+								combinations[combination]) *
+							100
+						} %`
+					);
+				} else {
+					return 0;
+				}
+			}
+		</script> -->
+	</body>
+</html>
